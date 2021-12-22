@@ -52,6 +52,10 @@ class AbstractUpdateAction extends Param
         return $this->setParam('_index', $index);
     }
 
+    public function setType(string $type)
+    {
+        return $this->setParam('_type', $type);
+    }
     /**
      * Get the document index name.
      *

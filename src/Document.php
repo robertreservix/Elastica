@@ -45,6 +45,7 @@ class Document extends AbstractUpdateAction
         $this->setId($id);
         $this->setData($data);
         $this->setIndex($index);
+        $this->setType('_doc');
     }
 
     /**
