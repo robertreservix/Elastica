@@ -445,6 +445,7 @@ class Client
         foreach ($ids as $id) {
             $action = new Action(Action::OP_TYPE_DELETE);
             $action->setId($id);
+            $action->setMetadata(array_merge($action->getMetadata(), ['_type' => '_doc']));
 
             if (!empty($routing)) {
                 $action->setRouting($routing);
